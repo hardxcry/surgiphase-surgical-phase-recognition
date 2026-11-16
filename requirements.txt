@@ -1,0 +1,13 @@
+numpy
+pandas
+opencv-python-headless
+pillow
+torch
+torchvision
+timm
+matplotlib
+plotly
+streamlit
+requests
+remotezip
+-e .

@@ -1,5 +1,7 @@
 # SurgiPhase: recognising the phases of keyhole surgery from video
 
+![Python](https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white) ![Status](https://img.shields.io/badge/status-research%20prototype-f59e0b) ![Tests](https://img.shields.io/badge/tests-9%20passing-16a34a) ![Licence](https://img.shields.io/badge/licence-all%20rights%20reserved-b91c1c)
+
 Labels each second of a laparoscopic gallbladder removal with one of seven surgical phases,
 using a ResNet-50 frame encoder and an LSTM that follows the operation over time. Trained and
 evaluated on the Cholec80 dataset.
@@ -92,5 +94,6 @@ Hariharan S
 
 ## License
 
-Code: MIT. Results derived from Cholec80 are for non-commercial research use, following the
-dataset licence.
+Copyright (c) 2026 Hariharan S. **All rights reserved.** This repository is public for viewing
+and evaluation only. Copying, reuse or redistribution of the code, text, figures or models
+needs written permission from the author. See [LICENSE](LICENSE). Material derived from Cholec80 (reports/predictions.json and the figures) remains under CC BY-NC-SA 4.0, as that dataset's licence requires.
