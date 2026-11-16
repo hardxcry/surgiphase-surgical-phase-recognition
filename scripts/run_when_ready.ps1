@@ -1,7 +1,8 @@
 # Waits for the Cholec80 subset download to finish, then extracts frames, trains and evaluates.
-# Progress goes to train.log (shown on the live dashboard). Safe to re-run: finished stages are skipped.
-$proj = 'D:\med-ai-portfolio\06-surgical-phase-recognition'
-$py = 'D:\med-ai-portfolio\.venv\Scripts\python.exe'
+# Progress goes to train.log. Safe to re-run: finished stages are skipped.
+# Run from anywhere; paths are resolved relative to this script. Set $env:PYTHON to choose an interpreter.
+$proj = Split-Path -Parent $PSScriptRoot
+$py = if ($env:PYTHON) { $env:PYTHON } else { 'python' }
 Set-Location $proj
 while ($true) {
   $done = $false
